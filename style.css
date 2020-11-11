@@ -188,3 +188,37 @@ a:link, a:visited {
     border: 1px solid #c6c6c6;
     color: #222;
 }
+
+.footer {
+    border-top: 1px solid #ddd;
+    background-color: #eee;
+    padding: 12px 30px;
+}
+
+.footer-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.footer-separator {
+    flex-grow: 1;
+}
+
+.footer-right {
+    justify-content: flex-end;  
+}
+
+.footer-left {
+    justify-content: flex-start;  
+}
+
+.footer-list li:not(:last-child) {
+    margin-right: 27px;
+}
+
+.footer-item:hover {
+    text-decoration: underline;
+}
