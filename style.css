@@ -197,22 +197,14 @@ a:link, a:visited {
 
 .footer-list {
     padding: 0;
+    margin: 0;
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 0;
 }
 
 .footer-separator {
     flex-grow: 1;
-}
-
-.footer-right {
-    justify-content: flex-end;  
-}
-
-.footer-left {
-    justify-content: flex-start;  
 }
 
 .footer-list li:not(:last-child) {
@@ -221,4 +213,30 @@ a:link, a:visited {
 
 .footer-item:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 584px){
+    .main {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .main-logo > img {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 640px){
+    .footer-list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-item {
+        margin: 10px 0;
+    }
+
+    .footer-separator {
+        flex-grow: 0;
+    }
 }
